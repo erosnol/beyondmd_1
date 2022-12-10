@@ -1,10 +1,10 @@
 version: "2.12"
 services:
-  frontend:
-    build: ./frontend
-    container_name: frontend_container
+  api:
+    build: ./api
+    container_name: api_container
     ports: 
       - '4001:4001'
     volumes:
-      - .:/frontend:/app
+      - .:/api:/app
       - .:/app/node_modules
