@@ -6,5 +6,5 @@ services:
     ports: 
       - '4001:4001'
     volumes:
-      - .:/api:/app
-      - .:/app/node_modules
+      - ./api:/app
+      - ./app/node_modules
